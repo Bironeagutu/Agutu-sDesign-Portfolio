@@ -25,6 +25,15 @@ header {
    align-items: center;
 }
 
+.hambuger {
+    color: rgb(95, 54, 54);
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(95, 54, 54);
+    margin-right: 20px;
+}
+
 nav ul {
     display: flex;
     gap: 20px;
@@ -100,11 +109,13 @@ h3 {
         padding: 10px;
     }
 
+    .hambuger {
+        display: block;
+    }
     .logo img {
         height: 6rem;
         margin: 0;
     }
-
     h1 {
         font-size: 28px;
     }
