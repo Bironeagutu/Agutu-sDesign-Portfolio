@@ -9,6 +9,12 @@
     box-sizing: border-box;
 }
 
+body {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     background-color: white;
     color: white;
@@ -67,4 +73,43 @@ h3 {
     font-size: 24px;
     margin-bottom: 20px;
     margin: 0;
+}
+
+/* ######################## Mobile View ######################################################### */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        display: none;
+       flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 6rem;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
 }
