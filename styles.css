@@ -84,6 +84,53 @@ h3 {
     margin: 0;
 }
 
+/* ############################ Footer ############################################################3 */
+footer {
+    background-color: rgb(95, 54, 54);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.social-media {
+    margin-top: 10px;
+    /* color:  rgb(95, 54, 54); */
+}
+
+/* .favicons {
+    color: rgb(95, 54, 54);;
+} */
+
+.container {
+    background-color: rgb(243, 239, 239);
+    width: 95%;         /* or any fixed width e.g., 600px */
+    margin: 0 auto; 
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container h3 {
+    padding: 20px;
+}
+
+.get-in-touch {
+    background-color: rgb(95, 54, 54);
+    border: none;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+}
+.get-in-touch:hover {
+    background-color: rgb(218, 211, 211);
+    color: rgb(95, 54, 54);
+    cursor: pointer;
+}
 /* ######################## Mobile View ######################################################### */
 
 @media (max-width: 768px) {
