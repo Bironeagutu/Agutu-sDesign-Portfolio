@@ -15,6 +15,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     margin: 0;
+    position: relative;
 }
 
 header {
@@ -87,8 +88,23 @@ main {
     flex-direction: column;
 }
 
+button {
+    background-color: rgb(95, 54, 54);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #333;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 150px;
+}
+
 section {
-   height: 100vh;   /* each section = full screen height */
+   height: 100vh;
   display: flex;
 }
 
@@ -111,38 +127,34 @@ section {
 }
 
 .description {
-    flex: 1;          /* makes each div take equal space */
+    flex: 1; 
   padding: 20px;
-  /* border: 1px solid #333; */
+  position: relative;
 }
 
 .image {
-  flex: 1;          /* makes each div take equal space */
+  flex: 1;
   padding: 20px;
-  /* border: 1px solid #333; */
 }
 
 /* ############################ Footer ############################################################3 */
 footer {
-    background-color:rgb(95, 54, 54);
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
+    padding: 10px;
 }
 
 .social-media {
     margin-top: 10px;
-    /* color:  rgb(95, 54, 54); */
 }
-
-/* .favicons {
-    color: rgb(95, 54, 54);;
-} */
 
 .container {
     background-color: rgb(243, 239, 239);
-    width: 95%;         /* or any fixed width e.g., 600px */
+    width: 95%;
     margin: 0 auto; 
     height: 150px;
     display: flex;
