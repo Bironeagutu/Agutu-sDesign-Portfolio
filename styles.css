@@ -137,6 +137,81 @@ section {
   padding: 20px;
 }
 
+/* ########################################################### Form ############################################### */
+form {
+    display: flex;
+}
+
+.contact-info {
+    flex: 1;
+    border: none;
+    background-color: #f8f8f8;;
+}
+
+.contact-info div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.contact-info h1 {
+    margin-bottom: 20px;
+    color: rgb(95, 54, 54);
+    
+}
+
+.contact-info i {
+  font-size: 1.5em; 
+  color: rgb(95, 54, 54);
+}
+
+form div {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ form label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="submit"],
+    form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+     form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+      form input[type="submit"] {
+      background-color: rgb(95, 54, 54);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-weight: bold;
+      width: 30%;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: rgb(124, 79, 79);
+    }
+
+    
+
 /* ############################ Footer ############################################################3 */
 footer {
     bottom: 0;
