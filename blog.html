@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Artmate Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Agutu's Designs | Real Estate & Construction</title>
     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,7 +17,7 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="/index.html" >Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About Us</a></li>
                 <li><a href="/services.html">Services</a></li>
                 <li><a href="/portfolio.html">Portfolio</a></li>
@@ -31,7 +33,218 @@
 
 
     <main>
-        <h1>bvidjkjk</h1>
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Our Blog</h1>
+                <p>Insights, trends, and inspiration from the world of real estate and construction</p>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article">
+            <div class="container">
+                <div class="featured-content" data-aos="fade-up">
+                    <div class="featured-image">
+                        <img src="/Screenshot_2025-09-26_21-21-00.jpg" alt="Featured Article">
+                        <div class="article-badge">Featured</div>
+                    </div>
+                    <div class="featured-text">
+                        <div class="article-meta">
+                            <span class="category">Design Trends</span>
+                            <span class="date">December 15, 2024</span>
+                        </div>
+                        <h2>The Future of Sustainable Architecture in Kenya</h2>
+                        <p>Explore how sustainable design principles are revolutionizing the construction industry in Kenya, from eco-friendly materials to energy-efficient building systems that are shaping the future of real estate development.</p>
+                        <div class="article-author">
+                            <img src="/Screenshot_2025-10-14_02-21-56-Photoroom.png" alt="Author">
+                            <div>
+                                <h4>Agutu Biron</h4>
+                                <p>Lead Architect</p>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more-btn">Read Full Article</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <div class="container">
+                <div class="category-filters" data-aos="fade-up">
+                    <button class="category-btn active" data-category="all">All Posts</button>
+                    <button class="category-btn" data-category="design">Design</button>
+                    <button class="category-btn" data-category="construction">Construction</button>
+                    <button class="category-btn" data-category="sustainability">Sustainability</button>
+                    <button class="category-btn" data-category="tips">Tips & Advice</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-grid">
+            <div class="container">
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="article-card" data-category="design" data-aos="fade-up" data-aos-delay="100">
+                        <div class="article-image">
+                            <img src="/Screenshot_2025-10-14_02-21-56-Photoroom.png" alt="Modern Interior Design">
+                            <div class="article-category">Design</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">December 10, 2024</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                            <h3>Modern Interior Design Trends for 2025</h3>
+                            <p>Discover the latest interior design trends that will dominate 2025, from minimalist aesthetics to bold color schemes and sustainable materials.</p>
+                            <div class="article-footer">
+                                <div class="author-info">
+                                    <img src="/Screenshot_2025-09-26_21-21-00.jpg" alt="Author">
+                                    <span>Sarah Mwangi</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="article-card" data-category="construction" data-aos="fade-up" data-aos-delay="200">
+                        <div class="article-image">
+                            <img src="/Screenshot_2025-09-26_21-21-00.jpg" alt="Construction Technology">
+                            <div class="article-category">Construction</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">December 8, 2024</span>
+                                <span class="read-time">7 min read</span>
+                            </div>
+                            <h3>Innovative Construction Technologies</h3>
+                            <p>How new technologies like 3D printing, modular construction, and AI are transforming the way we build homes and commercial spaces.</p>
+                            <div class="article-footer">
+                                <div class="author-info">
+                                    <img src="/Screenshot_2025-10-14_02-21-56-Photoroom.png" alt="Author">
+                                    <span>James Kiprotich</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="article-card" data-category="sustainability" data-aos="fade-up" data-aos-delay="300">
+                        <div class="article-image">
+                            <img src="/Screenshot_2025-10-14_02-21-56-Photoroom.png" alt="Green Building">
+                            <div class="article-category">Sustainability</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">December 5, 2024</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                            <h3>Green Building Materials: A Complete Guide</h3>
+                            <p>Explore sustainable building materials that are not only eco-friendly but also cost-effective and durable for modern construction projects.</p>
+                            <div class="article-footer">
+                                <div class="author-info">
+                                    <img src="/Screenshot_2025-09-26_21-21-00.jpg" alt="Author">
+                                    <span>Agutu Biron</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="article-card" data-category="tips" data-aos="fade-up" data-aos-delay="400">
+                        <div class="article-image">
+                            <img src="/Screenshot_2025-09-26_21-21-00.jpg" alt="Home Renovation">
+                            <div class="article-category">Tips & Advice</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">December 3, 2024</span>
+                                <span class="read-time">4 min read</span>
+                            </div>
+                            <h3>10 Essential Tips for Home Renovation</h3>
+                            <p>Planning a home renovation? Here are our top 10 essential tips to ensure your project runs smoothly and stays within budget.</p>
+                            <div class="article-footer">
+                                <div class="author-info">
+                                    <img src="/Screenshot_2025-10-14_02-21-56-Photoroom.png" alt="Author">
+                                    <span>Sarah Mwangi</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="article-card" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                        <div class="article-image">
+                            <img src="/Screenshot_2025-10-14_02-21-56-Photoroom.png" alt="Architectural Styles">
+                            <div class="article-category">Design</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">November 30, 2024</span>
+                                <span class="read-time">8 min read</span>
+                            </div>
+                            <h3>Popular Architectural Styles in Kenya</h3>
+                            <p>From traditional African architecture to modern contemporary designs, explore the diverse architectural styles that define Kenya's built environment.</p>
+                            <div class="article-footer">
+                                <div class="author-info">
+                                    <img src="/Screenshot_2025-09-26_21-21-00.jpg" alt="Author">
+                                    <span>James Kiprotich</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="article-card" data-category="construction" data-aos="fade-up" data-aos-delay="600">
+                        <div class="article-image">
+                            <img src="/Screenshot_2025-09-26_21-21-00.jpg" alt="Project Management">
+                            <div class="article-category">Construction</div>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">November 28, 2024</span>
+                                <span class="read-time">6 min read</span>
+                            </div>
+                            <h3>Effective Project Management in Construction</h3>
+                            <p>Learn the key principles of successful construction project management, from planning and scheduling to quality control and team coordination.</p>
+                            <div class="article-footer">
+                                <div class="author-info">
+                                    <img src="/Screenshot_2025-10-14_02-21-56-Photoroom.png" alt="Author">
+                                    <span>Agutu Biron</span>
+                                </div>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section" data-aos="fade-up">
+                    <button class="load-more-btn">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content" data-aos="fade-up">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest insights, trends, and tips in real estate and construction.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
             <div class="container">
@@ -65,5 +278,82 @@
                 <p>&copy; 2024 Agutu's Designs. All rights reserved.</p>
             </div>
     </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Blog JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Category filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const articleCards = document.querySelectorAll('.article-card');
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    articleCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Load more functionality
+            const loadMoreBtn = document.querySelector('.load-more-btn');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // Simulate loading more articles
+                    this.textContent = 'Loading...';
+                    setTimeout(() => {
+                        this.textContent = 'Load More Articles';
+                        // In a real application, you would load more articles here
+                    }, 1000);
+                });
+            }
+
+            // Newsletter form functionality
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    
+                    // Simulate newsletter subscription
+                    const button = this.querySelector('button');
+                    const originalText = button.textContent;
+                    button.textContent = 'Subscribing...';
+                    
+                    setTimeout(() => {
+                        button.textContent = 'Subscribed!';
+                        button.style.background = '#28a745';
+                        this.querySelector('input[type="email"]').value = '';
+                        
+                        setTimeout(() => {
+                            button.textContent = originalText;
+                            button.style.background = '';
+                        }, 2000);
+                    }, 1000);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
