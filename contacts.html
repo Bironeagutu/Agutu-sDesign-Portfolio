@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Artmate Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Agutu's Designs | Real Estate & Construction</title>
     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
      <header>
@@ -15,7 +17,8 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="/index.html" >Home</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
                 <li><a href="/services.html">Services</a></li>
                 <li><a href="/portfolio.html">Portfolio</a></li>
                 <li><a href="/blog.html">Blog</a></li>
@@ -30,37 +33,220 @@
 
 
     <main>
-        <form action="">
-            <div class="contact-info">
-                <h3><b><i>Contact Info</i></b></h3>
-                <div>
-                     <i class="fa-solid fa-phone"></i>
-                     <h2>+254759134266</h2>
-                </div>
-                <div>
-                    <i class="fa-solid fa-envelope"></i>
-                    <h2>agutubiron@gmail.com</h2>
-                </div>
-    
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your next project? We'd love to hear from you</p>
             </div>
-           <div>
-            <label for="Name">Name</label>
-            <input type="text" id="Name" name="Name" placeholder="Your name.." required>
+        </section>
 
-            <label for="Email">Email</label>
-            <input type="email" id="Email" name="Email" placeholder="Your email.." required>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info" data-aos="fade-right">
+                        <h2>Contact Information</h2>
+                        <p>Get in touch with us for your real estate and construction needs. We're here to help bring your vision to life.</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+254 759 134 266</p>
+                                    <span>Mon-Fri 8AM-6PM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>agutubiron@gmail.com</p>
+                                    <span>We'll respond within 24 hours</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Office</h3>
+                                    <p>Nairobi, Kenya</p>
+                                    <span>Available for site visits</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Business Hours</h3>
+                                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                    <span>Saturday: 9:00 AM - 4:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
 
-            <label for="Phone">Phone</label>
-            <input type="tel" id="Phone" name="Phone" placeholder="Your phone number.." required>
+                        <!-- Social Media -->
+                        <div class="social-section">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-            <label for="Subject">Subject</label>
-            <input type="text" id="Subject" name="Subject" placeholder="Subject.." required>
-            
-            <label for="Message">Message</label>
-            <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px" required></textarea>
-            <input type="submit" value="Submit">
-           </div>
-        </form>
+                    <!-- Contact Form -->
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <div class="form-header">
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                        </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="residential">Residential Project</option>
+                                    <option value="commercial">Commercial Project</option>
+                                    <option value="renovation">Renovation Services</option>
+                                    <option value="interior">Interior Design</option>
+                                    <option value="consultation">Free Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Project Budget (Optional)</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-500k">Under KES 500,000</option>
+                                    <option value="500k-1m">KES 500,000 - 1,000,000</option>
+                                    <option value="1m-2m">KES 1,000,000 - 2,000,000</option>
+                                    <option value="2m-5m">KES 2,000,000 - 5,000,000</option>
+                                    <option value="5m-10m">KES 5,000,000 - 10,000,000</option>
+                                    <option value="over-10m">Over KES 10,000,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your project, timeline, and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I would like to receive updates about new projects and services
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-header" data-aos="fade-up">
+                    <h2>Find Us</h2>
+                    <p>Visit our office or get directions to our location</p>
+                </div>
+                <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Nairobi, Kenya</h3>
+                        <p>Our office is located in Nairobi. Contact us for the exact address and directions.</p>
+                        <a href="https://maps.google.com" target="_blank" class="map-btn">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-header" data-aos="fade-up">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions about our services</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3>How long does a typical project take?</h3>
+                        <p>Project timelines vary depending on scope and complexity. Residential projects typically take 3-6 months, while commercial projects can take 6-12 months or more.</p>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Do you provide free consultations?</h3>
+                        <p>Yes! We offer free initial consultations to discuss your project requirements, budget, and timeline. This helps us provide accurate estimates and recommendations.</p>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3>What areas do you serve?</h3>
+                        <p>We primarily serve Nairobi and surrounding areas, but we also take on projects throughout Kenya. Contact us to discuss your specific location.</p>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                        <h3>Do you handle permits and approvals?</h3>
+                        <p>Yes, we assist with all necessary permits and approvals required for your project. Our team is experienced in navigating local regulations and requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
      <footer>
             <div class="container">
@@ -91,5 +277,147 @@
                 <p>&copy; 2024 Agutu's Designs. All rights reserved.</p>
             </div>
     </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Contact Page JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hambuger');
+            const nav = document.querySelector('nav ul');
+            
+            if (hamburger && nav) {
+                hamburger.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                });
+                
+                const navLinks = nav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        nav.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    });
+                });
+                
+                document.addEventListener('click', function(event) {
+                    if (!hamburger.contains(event.target) && !nav.contains(event.target)) {
+                        nav.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            }
+
+            // Contact form handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Basic validation
+                    if (!data.firstName || !data.lastName || !data.email || !data.phone || !data.subject || !data.message) {
+                        showNotification('Please fill in all required fields.', 'error');
+                        return;
+                    }
+                    
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(data.email)) {
+                        showNotification('Please enter a valid email address.', 'error');
+                        return;
+                    }
+                    
+                    // Phone validation (basic)
+                    const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+                    if (!phoneRegex.test(data.phone)) {
+                        showNotification('Please enter a valid phone number.', 'error');
+                        return;
+                    }
+                    
+                    // Simulate form submission
+                    const submitBtn = contactForm.querySelector('.submit-btn');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = '<span class="btn-text">Sending...</span><span class="btn-icon"><i class="fas fa-spinner fa-spin"></i></span>';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate API call
+                    setTimeout(() => {
+                        showNotification('Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.', 'success');
+                        contactForm.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 2000);
+                });
+            }
+        });
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            // Remove existing notifications
+            const existingNotifications = document.querySelectorAll('.notification');
+            existingNotifications.forEach(notification => notification.remove());
+            
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+                    <span>${message}</span>
+                    <button class="notification-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `;
+            
+            // Add to page
+            document.body.appendChild(notification);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.remove();
+                }
+            }, 5000);
+            
+            // Close button functionality
+            const closeBtn = notification.querySelector('.notification-close');
+            closeBtn.addEventListener('click', () => {
+                notification.remove();
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
