@@ -219,11 +219,11 @@ button {
     left: 0;
     width: 150px;
 }
-
+/* 
 section {
    height: 100vh;
   display: flex;
-}
+} */
 
 .hero {
     background-color: rgb(252, 247, 247);
@@ -334,7 +334,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%; 
-    background: #333;
+    background: #ffffff;
     color: white;
     text-align: center;
     padding: 10px;
@@ -345,7 +345,7 @@ footer {
 }
 
 .container {
-    background-color: rgb(243, 239, 239);
+    background-color: white;
     width: 95%;
     margin: 0 auto; 
     height: 150px;
@@ -659,6 +659,8 @@ footer {
     }
     
     .hero-stats {
+
+
         position: relative;
         bottom: auto;
         left: auto;
@@ -4206,4 +4208,16 @@ footer {
     .faq-item p {
         font-size: 0.95rem;
     }
+
+    .member-image{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+}
+
+.member-image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
